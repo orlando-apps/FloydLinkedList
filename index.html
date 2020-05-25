@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  </style>
+  <head>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="jquery.js"></script>
+    <script src="linkedlist.js"></script>
+    <script src="init.js"></script>
+  </head>
+  <body>
+    <div class = formFormat>
+      <form action="#" id="send" method="post" class="form-inline">
+          <div class="form-group mb-2">
+            <label for="exampleInputEmail1">line</label>
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" value = 8 name="message" id="line" />
+          </div>
+          <div class="form-group mb-2">
+            <label for="exampleInputEmail1">loop</label>
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" value = 20 name="message" id="loop" />
+          </div>
+          <input class="btn btn-primary mb-2" type="submit" name="submit" />
+      </form>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        var $body = $('body');
+        var $wrapper = $('<div class = wrapper ></div>')
+        $wrapper.appendTo($body);
+      });
+
+    </script>
+  </body>
+</html>

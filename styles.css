@@ -1,0 +1,31 @@
+body, html{
+  height:100%;
+}
+
+body{
+  margin: 0px;
+   background-color:#444;
+	font-size: 18px;
+	color:white;
+
+}
+
+.formFormat {
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+}
+
+.form-inline .form-control{
+	width: 100px
+}
+
+.dancer{
+  border:20px solid white;
+  border-radius:20px;
+  position:absolute;
+}
+
+
+
