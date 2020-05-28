@@ -28,7 +28,7 @@ $(document).ready(function() {
         }
       }
     }
-
+    $('body').height()*(1/2)
     var currentNode = list.head;
     var radius = loop*10
     var spacing  = 360 / loop
@@ -42,8 +42,9 @@ $(document).ready(function() {
     let lineL = loopL -line*circleSize*2 - line*gap*2 - gap
     var l;
     var t;
-    var top = 350
-    var left = 200
+    var top = $('body').height()*(1/2)
+    //var top = 350
+    var left = 175
 
     while( currentNode ){
       $('.wrapper').append(currentNode.$node);
@@ -83,16 +84,18 @@ $(document).ready(function() {
     }
 
     let snail = list.head;
-    while (turtle){
-      snail.step(timeOn,"#FF0000")
-      turtle.step(timeOn, "#FF0000")
-      turtle = turtle.next;
-      snail = snail.next;
-      if (turtle.value === snail.value){
-        turtle.step(timeOn + 500,  "#FF0000", true );
-        break;
+    if (snail.value !== turtle.value){
+      while (turtle){
+        snail.step(timeOn,"#FF0000")
+        turtle.step(timeOn, "#FF0000")
+        turtle = turtle.next;
+        snail = snail.next;
+        if (turtle.value === snail.value){
+          turtle.step(timeOn + 500,  "#FF0000", true );
+          break;
+        }
+        timeOn += 800
       }
-      timeOn += 800
-    }
+      }
   });
 });
