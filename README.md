@@ -1,6 +1,11 @@
 # Floyd Linked List
 
-# Visual representation of where a slow and fast pointer will meet inside a loop linked list. Sequentially, determine when the starting point is located
+## Usage
 
-<img src = "images/screenshot.png>
+```sh
+Visual representation of how a slow and fast pointer will meet inside a loop linked list. Sequentially, determine the loop's starting point
+```
+
 ![](images/screenshot.png)
+
+
